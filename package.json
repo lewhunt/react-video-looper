@@ -1,7 +1,7 @@
 {
   "name": "react-video-looper",
   "version": "1.0.0",
-  "description": "react-video-looper React component",
+  "description": "A react component that provides non-descrutive inner looping of a video source",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -15,24 +15,35 @@
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
-    "test": "nwb test-react",
-    "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test": "jest",
+    "test:watch": "jest --watch --no-cache",
+    "deploy": "gh-pages -d demo/dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^4.4.1"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "babel-jest": "^24.9.0",
+    "babel-polyfill": "^6.26.0",
+    "gh-pages": "^2.1.1",
+    "jest": "^24.9.0",
     "nwb": "0.23.x",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Lewis Hunt",
+  "homepage": "https://github.com/lewhunt/react-video-looper",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/lewhunt/react-video-looper.git",
   "keywords": [
-    "react-component"
+    "react-component", "video", "loop"
   ]
 }

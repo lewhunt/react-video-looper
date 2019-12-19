@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoLooper matches Snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa hatrPw"
+  >
+    <div
+      autoplay=""
+      class="sc-htpNat jfHBEU"
+      end="9.48"
+      speed="1"
+      start="4.31"
+    />
+    <video
+      autoplay=""
+      class="sc-bwzfXH kUYtOs"
+      end="9.48"
+      speed="1"
+      start="4.31"
+    >
+      <source
+        src="sample.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <video
+      autoplay=""
+      class="sc-bwzfXH dkJYhE videoClone"
+      end="9.48"
+      speed="1"
+      start="4.31"
+    >
+      <source
+        src="sample.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+</div>
+`;
