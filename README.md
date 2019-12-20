@@ -6,13 +6,51 @@ This component takes a video source file with two specified values (start and en
 
 It offers an alternative to the default HTML5 video loop attribute allowing you to use the original video source file and benefit from performant non-destructive looping.
 
-Under the hood this component utilises two overlapping video elements that playback in turn, which in many cases provides a more seamless loop experience compared to the default loop attribute or media fragments. Running the demo in debug mode illustrates this technique by highlighting the two video instances playing side by side.
+Under the hood this component utilises two overlapping video elements that playback in turn. In many cases this provides a more seamless loop compared to the default loop attribute or media fragment parameters. Running the demo editor in debug mode further illustrates this technique of non-destructive inner looping.
 
 ## Install
-TODO
+### npm package
+```bash
+npm install react-video-looper
+```
+
+### CDN script
+```js
+<script type="text/javascript" src="react-video-looper.min.js"></script>
+```
 
 ## Usage
-TODO
+Remember below to update references to your sample video and the start/end props (in seconds)
+### npm package
+```js
+import React, { Component } from 'react'
+import VideoLooper from 'react-video-looper'
+import sampleVideo from '../assets/sample.mp4'
+
+export default class App extends Component {
+  render () {
+    return (
+      <div>
+        <VideoLooper source='{sampleVideo}' start={4.31} end={9.48}/>
+      </div>
+    )
+  }
+}
+```
+
+### CDN script (for prototyping)
+```js
+  <body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="react-video-looper.min.js"></script>
+    <script type="text/babel">
+      ReactDOM.render(<VideoLooper source='sample.mp4' start={4.31} end={9.48}/>, document.getElementById('app'))
+    </script>
+</body>
+```
 
 ## Options / Props
 Name | Type | Required | Default | Description 
@@ -26,11 +64,13 @@ Name | Type | Required | Default | Description
 `muted` | bool | optional | true | disable audio of video loop
 `isDebugMode` | bool | optional | false | debug mode titles the active video instance and current playback time
 `isSplitView` | bool | optional | false | illustrative split-view of the two video instances playing side by side
+`width` | string | optional | '100%' | css width of the component (default is full width)
+`height` | string | optional | '100vh' | css height of the component (default is full height)
+`objectFit` | string | optional | 'cover' | css object-fit size of the video (default is clipped to fit)
+`objectPosition` | string | optional | '40%' | css object-position alignment of the video
 
-TODO - width, height, objectFit
-
-## Demo
-The provided demo has a simple editor that allows you to change some of the above options, which then get passed into the component as props.
+## Demo Editor
+The provided demo contains a simple editor component that allows you to change some of the options which then get passed into the component as props.
 
 ## License
 MIT © [Lewis Hunt](https://github.com/lewhunt)

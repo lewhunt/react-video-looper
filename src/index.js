@@ -13,7 +13,11 @@ export default class VideoLooper extends React.Component {
         autoPlay: PropTypes.bool,
         muted: PropTypes.bool,
         isDebugMode: PropTypes.bool,
-        isSplitView: PropTypes.bool
+        isSplitView: PropTypes.bool,
+        width: PropTypes.string,
+        height: PropTypes.string,
+        objectFit: PropTypes.string,
+        objectPosition: PropTypes.string,
     };
 
     static defaultProps = {
@@ -23,6 +27,12 @@ export default class VideoLooper extends React.Component {
         muted: true,
         isDebugMode: false,
         isSplitView: false,
+        width: '100%',
+        height: '100vh',
+        objectFit: 'cover',
+        objectPosition: '40%'
+
+
     };
 
     constructor(props) {
@@ -130,7 +140,7 @@ export default class VideoLooper extends React.Component {
 
     render() {
         return (
-            <VideoContainer onClick={this.togglePlayback}>
+            <VideoContainer onClick={this.togglePlayback} {...this.props}>
                 <PlayButton {...this.state} {...this.props}/>
                 <Video ref={(video) => { this.video = video; }} isVisible={!this.state.isVideoCloneActive} {...this.props}>
                     <source src={this.props.source} type='video/mp4' />
@@ -166,8 +176,8 @@ const Debug = (props) => {
 const VideoContainer = styled.div`
   position: relative;
   top:0;
-  width: 100%;
-  height: 100vh;
+  width: ${props => props.width};
+  height: ${props => props.height};
   overflow: hidden;
   background-color: black;
   cursor: pointer;
@@ -175,8 +185,8 @@ const VideoContainer = styled.div`
 
 const Video = styled.video`
     position:  ${props => ((props.isDebugMode && props.isSplitView) ? 'relative' : 'absolute')};
-    object-fit:cover;
-    object-position: 40%;
+    object-fit: ${props => props.objectFit};
+    object-position: ${props => props.objectPosition};
     width: ${props => ((props.isDebugMode && props.isSplitView) ? '50%' : '100%')};
     height: 100%;
     left:0;
