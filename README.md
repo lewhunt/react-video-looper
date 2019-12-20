@@ -20,7 +20,7 @@ npm install react-video-looper
 ```
 
 ## Usage
-Remember below to update references to your sample video and the start/end props (in seconds)
+Remember to update references to your sample video and the start/end value props (values in seconds)
 ### npm package
 ```js
 import React, { Component } from 'react'
