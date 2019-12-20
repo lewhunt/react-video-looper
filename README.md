@@ -9,19 +9,19 @@ It offers an alternative to the default HTML5 video loop attribute allowing you 
 Under the hood this component utilises two overlapping video elements that playback in turn. In many cases this provides a more seamless loop compared to the default loop attribute or media fragment parameters. Running the demo editor in debug mode further illustrates this technique of non-destructive inner looping.
 
 ## Install
-### npm package
+### npm package (recommended)
 ```bash
 npm install react-video-looper
 ```
 
-### CDN script
+### CDN script (for prototyping only)
 ```js
 <script type="text/javascript" src="react-video-looper.min.js"></script>
 ```
 
 ## Usage
 Remember to update references to your sample video and the start/end value props (values in seconds)
-### npm package
+### Node.js development setup (recommended)
 ```js
 import React, { Component } from 'react'
 import VideoLooper from 'react-video-looper'
@@ -38,7 +38,7 @@ export default class App extends Component {
 }
 ```
 
-### CDN script (for prototyping)
+### Browser script setup (for prototyping only)
 ```js
   <body>
     <div id="app"></div>
