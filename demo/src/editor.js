@@ -6,12 +6,12 @@ export const Editor = (props) => {
   
   return (
       <div>
-        <EditorButton type='button' onClick={(evt) => props.updateState('isEditorActive', evt)}>{props.isEditorActive ? 'Close' : 'Editor'}</EditorButton>
+        <EditorButton type='button' onClick={(evt) => props.updateFormData('isEditorActive', evt)}>{props.isEditorActive ? 'Close' : 'Editor'}</EditorButton>
         <EditorPanel isEditorActive={props.isEditorActive}>
-          <label>Start of loop<input type="text" onChange={(evt) => props.updateState('start', evt)} placeholder={props.startPlaceholder}></input></label>
-          <label>End of loop<input type="text" onChange={(evt) => props.updateState('end', evt)} placeholder={props.endPlaceholder}></input></label>
-          <label>Debug<input type="checkbox" onClick={(evt) => props.updateState('isDebugMode', evt)} defaultChecked={props.isDebugMode}></input></label>
-          <label>Split view<input type="checkbox" onClick={(evt) => props.updateState('isSplitView', evt)} defaultChecked={props.isSplitView} disabled={!props.isDebugMode}></input></label>
+          <label>Start of loop<input type='number' onChange={(evt) => props.updateFormData('start', evt)} placeholder={props.initialFormData.start}></input></label>
+          <label>End of loop<input type='number' onChange={(evt) => props.updateFormData('end', evt)} placeholder={props.initialFormData.end}></input></label>
+          <label>Debug<input type='checkbox' onClick={(evt) => props.updateFormData('isDebugMode', evt)} defaultChecked={props.isDebugMode}></input></label>
+          <label>Split view<input type='checkbox' onClick={(evt) => props.updateFormData('isSplitView', evt)} defaultChecked={props.isSplitView} disabled={!props.isDebugMode}></input></label>
         </EditorPanel>
       </div>
   )
@@ -62,7 +62,7 @@ const EditorPanel = styled.div`
   input {
     display: block;
     margin:0.5em 0 1em 0;
-    &[type="text"] {
+    &[type="number"] {
       width:70px;
     }
     &[type="checkbox"] {

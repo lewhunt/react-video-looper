@@ -1,6 +1,8 @@
 # React Video Looper
 A video component that provides non-destructive inner looping of a video source file.
 
+![Demo Example 1](readme-assets/react-video-looper-1.gif)
+
 ## Intro
 This component takes a video source file with two specified values (start and end points) and then generates a looping video element.
 
@@ -71,6 +73,8 @@ Name | Type | Required | Default | Description
 
 ## Demo Editor
 The provided demo contains a simple editor component that allows you to change some of the options which then get passed into the component as props.
+
+![Demo Example 2](readme-assets/react-video-looper-2.gif)
 
 ## License
 MIT © [Lewis Hunt](https://github.com/lewhunt)

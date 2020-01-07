@@ -31,8 +31,6 @@ export default class VideoLooper extends React.Component {
         height: '100vh',
         objectFit: 'cover',
         objectPosition: '40%'
-
-
     };
 
     constructor(props) {
@@ -54,8 +52,8 @@ export default class VideoLooper extends React.Component {
 
     componentDidUpdate(prevProps) {
         const nextVideo = this.state.isVideoCloneActive ? 'video' : 'videoClone';
-        if (this.props.start !== prevProps.start) {
-            this[nextVideo].currentTime = this.props.start;
+        if (this.props.start !== prevProps.start && this.props.start < this.video.duration) {
+            this[nextVideo].currentTime = Number(this.props.start);
         } 
         if (this.props.speed !== prevProps.speed) {
             this.video.playbackRate = this.props.speed;
