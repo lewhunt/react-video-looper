@@ -9,18 +9,18 @@ import { useFormData } from './useFormData.js'
 
 export default function Demo() {
 
-  const [formData, initialFormData, updateFormData] = useFormData({ 
+  const [formData, updateFormData, initialFormData, hasInitialDataForPlaceholder] = useFormData({ 
     start: 4.31,
     end: 9.48,
     isEditorActive: false,
     isDebugMode: true,
     isSplitView: false
-  });
+  }, true);
  
   return (
     <div>
       <GlobalStyle></GlobalStyle>
-      <Editor {...formData} initialFormData={initialFormData} updateFormData={updateFormData}></Editor>
+      <Editor {...formData} initialFormData={initialFormData} updateFormData={updateFormData} hasInitialDataForPlaceholder={hasInitialDataForPlaceholder}></Editor>
       <VideoLooper source={sampleVideo} start={Number(formData.start)} end={Number(formData.end)} isDebugMode={formData.isDebugMode} isSplitView={formData.isSplitView} />
     </div>
   )

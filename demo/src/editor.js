@@ -8,10 +8,10 @@ export const Editor = (props) => {
       <div>
         <EditorButton type='button' onClick={(evt) => props.updateFormData('isEditorActive', evt)}>{props.isEditorActive ? 'Close' : 'Editor'}</EditorButton>
         <EditorPanel isEditorActive={props.isEditorActive}>
-          <label>Start of loop<input type='number' onChange={(evt) => props.updateFormData('start', evt)} placeholder={props.initialFormData.start}></input></label>
-          <label>End of loop<input type='number' onChange={(evt) => props.updateFormData('end', evt)} placeholder={props.initialFormData.end}></input></label>
-          <label>Debug<input type='checkbox' onClick={(evt) => props.updateFormData('isDebugMode', evt)} defaultChecked={props.isDebugMode}></input></label>
-          <label>Split view<input type='checkbox' onClick={(evt) => props.updateFormData('isSplitView', evt)} defaultChecked={props.isSplitView} disabled={!props.isDebugMode}></input></label>
+          <label>Start of loop<input type='number' value={props.start} onChange={(evt) => props.updateFormData('start', evt)} placeholder={props.hasInitialDataForPlaceholder && props.initialFormData.start}></input></label>
+          <label>End of loop<input type='number' value={props.end} onChange={(evt) => props.updateFormData('end', evt)} placeholder={props.hasInitialDataForPlaceholder && props.initialFormData.end}></input></label>
+          <label>Debug<input type='checkbox' value={props.isDebugMode}  onClick={(evt) => props.updateFormData('isDebugMode', evt)} defaultChecked={props.isDebugMode}></input></label>
+          <label>Split view<input type='checkbox' value={props.isSplitView}  onClick={(evt) => props.updateFormData('isSplitView', evt)} defaultChecked={props.isSplitView} disabled={!props.isDebugMode}></input></label>
         </EditorPanel>
       </div>
   )
