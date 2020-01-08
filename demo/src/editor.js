@@ -10,8 +10,8 @@ export const Editor = (props) => {
         <EditorPanel isEditorActive={props.isEditorActive}>
           <label>Start of loop<input type='number' value={props.start} onChange={(evt) => props.updateFormData('start', evt)} placeholder={props.hasInitialDataForPlaceholder && props.initialFormData.start}></input></label>
           <label>End of loop<input type='number' value={props.end} onChange={(evt) => props.updateFormData('end', evt)} placeholder={props.hasInitialDataForPlaceholder && props.initialFormData.end}></input></label>
-          <label>Debug<input type='checkbox' value={props.isDebugMode}  onClick={(evt) => props.updateFormData('isDebugMode', evt)} defaultChecked={props.isDebugMode}></input></label>
-          <label>Split view<input type='checkbox' value={props.isSplitView}  onClick={(evt) => props.updateFormData('isSplitView', evt)} defaultChecked={props.isSplitView} disabled={!props.isDebugMode}></input></label>
+          <label>Debug<input type='checkbox' checked={props.isDebugMode} onChange={(evt) => props.updateFormData('isDebugMode', evt)}></input></label>
+          <label>Split view<input type='checkbox' checked={props.isSplitView} onChange={(evt) => props.updateFormData('isSplitView', evt)} disabled={!props.isDebugMode}></input></label>
         </EditorPanel>
       </div>
   )
