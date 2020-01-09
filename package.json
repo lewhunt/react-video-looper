@@ -45,7 +45,9 @@
   "license": "MIT",
   "repository": "https://github.com/lewhunt/react-video-looper.git",
   "keywords": [
-    "react-component",
+    "web",
+    "front-end",
+    "react",
     "video",
     "loop"
   ]
