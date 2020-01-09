@@ -5,7 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 import VideoLooper from '../../src'
 import sampleVideo from '../../src/sample.mp4'
 import { Editor } from './editor.js'
-import { useFormData } from './useFormData.js'
+import useFormData from 'react-use-form-data'
 
 export default function Demo() {
 

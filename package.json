@@ -20,6 +20,7 @@
     "deploy": "gh-pages -d demo/dist"
   },
   "dependencies": {
+    "react-use-form-data": "^1.0.2",
     "styled-components": "^4.4.1"
   },
   "peerDependencies": {
