@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 
-export const useFormData = (initialData, hasInitialDataForPlaceholder) => {
+export const useFormData = (initialData, isInitialDataForPlaceholder) => {
   const [formData, setFormData] = useState(initialData)
 
   const initialFormData = useRef(initialData).current
@@ -21,5 +21,5 @@ export const useFormData = (initialData, hasInitialDataForPlaceholder) => {
     }
   }
 
-  return [formData, updateFormData, initialFormData, hasInitialDataForPlaceholder]
+  return [formData, updateFormData, initialFormData, isInitialDataForPlaceholder]
 }
