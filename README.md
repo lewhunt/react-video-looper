@@ -13,7 +13,7 @@ This react component takes a video source file with two specified values (start 
 It offers an alternative to the default HTML5 video loop attribute allowing you to use the original video source file and benefit from performant non-destructive looping. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
 
 ### How is it done?
-Under the hood this component utilises two overlapping video elements that playback in turn. Running the demo in debug mode (with split view enabled) further illustrates this technique with the cloned video set to greyscale. See the end of this readme for more info on the [editor](#demo-editor).
+Under the hood this component utilises two overlapping video elements that playback in turn. Running the demo in debug mode (with split view enabled) further illustrates this technique with debug text and the cloned video is set to greyscale. See the end of this readme for more info on the [editor](#demo-editor).
 
 ## Install
 ### npm package (recommended)
