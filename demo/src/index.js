@@ -3,7 +3,7 @@ import React from 'react';
 import {render} from 'react-dom'
 import { createGlobalStyle } from 'styled-components'
 import VideoLooper from '../../src'
-import sampleVideo from '../public/sample.mp4'
+import sampleVideo from '../../src/sample.mp4'
 import { Editor } from './editor.js'
 import useFormData from 'react-use-form-data'
 
