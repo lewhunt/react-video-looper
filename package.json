@@ -20,7 +20,6 @@
     "deploy": "gh-pages -d demo/dist"
   },
   "dependencies": {
-    "react-use-form-data": "^1.0.2",
     "styled-components": "^4.4.1"
   },
   "peerDependencies": {
@@ -38,7 +37,8 @@
     "jest": "^24.9.0",
     "nwb": "0.23.x",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-use-form-data": "^1.0.4"
   },
   "author": "Lewis Hunt",
   "homepage": "https://github.com/lewhunt/react-video-looper",

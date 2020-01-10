@@ -1,19 +1,24 @@
 # React Video Looper
 A video component that provides non-destructive inner looping of a video source file.
 
-![Demo Example 1](readme-assets/react-video-looper-1.gif)
+![Example](readme-assets/react-video-looper-example.gif)
+
+[Demo](https://lewhunt.github.io/react-video-looper/)
 
 ## Intro
-This component takes a video source file with two specified values (start and end points) and then generates a looping video element.
+### What is it?
+This react component takes a video source file with two specified values (start and end points) and then generates an infinite (or finite) looping video element.
 
-It offers an alternative to the default HTML5 video loop attribute allowing you to use the original video source file and benefit from performant non-destructive looping.
+### Why do it?
+It offers an alternative to the default HTML5 video loop attribute allowing you to use the original video source file and benefit from performant non-destructive looping. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
 
-Under the hood this component utilises two overlapping video elements that playback in turn. In many cases this provides a more seamless loop compared to the default loop attribute or media fragment parameters. Running the demo editor in debug mode further illustrates this technique of non-destructive inner looping.
+### How is it done?
+Under the hood this component utilises two overlapping video elements that playback in turn. Running the demo in debug mode (with split view enabled) further illustrates this technique with the cloned video set to greyscale. See the end of this readme for more info on the [editor](#demo-editor).
 
 ## Install
 ### npm package (recommended)
 ```bash
-npm install react-video-looper
+npm i react-video-looper
 ```
 
 ### CDN script (for prototyping only)
@@ -22,21 +27,18 @@ npm install react-video-looper
 ```
 
 ## Usage
-Remember to update references to your sample video and the start/end value props (values in seconds)
 ### Node.js development setup (recommended)
 ```js
-import React, { Component } from 'react'
+import React from 'react'
 import VideoLooper from 'react-video-looper'
 import sampleVideo from '../assets/sample.mp4'
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <VideoLooper source='{sampleVideo}' start={4.31} end={9.48}/>
-      </div>
-    )
-  }
+export default function Demo() {
+  return (
+    <div>
+      <VideoLooper source='{sampleVideo}' start={4.31} end={9.48}/>
+    </div>
+  )
 }
 ```
 
@@ -72,9 +74,9 @@ Name | Type | Required | Default | Description
 `objectPosition` | string | optional | '40%' | css object-position alignment of the video
 
 ## Demo Editor
-The provided demo contains a simple editor component that allows you to change some of the options which then get passed into the component as props.
+The provided demo includes a simple editor that allows you to change some of the options. The [react-use-form-data hook](https://github.com/lewhunt/react-use-form-data) is used to manage the demo editor's data state:
 
-![Demo Example 2](readme-assets/react-video-looper-2.gif)
+![Demo Editor Example](readme-assets/react-use-form-data-example.gif)
 
 ## License
 MIT © [Lewis Hunt](https://github.com/lewhunt)
