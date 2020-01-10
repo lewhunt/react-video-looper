@@ -23,7 +23,7 @@ npm i react-video-looper
 
 ### CDN script (for prototyping only)
 ```js
-<script type="text/javascript" src="react-video-looper.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/react-video-looper/umd/react-video-looper.min.js"></script>
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ export default function Demo() {
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-    <script src="react-video-looper.min.js"></script>
+    <script src="https://unpkg.com/react-video-looper/umd/react-video-looper.min.js"></script>
     <script type="text/babel">
       ReactDOM.render(<VideoLooper source='sample.mp4' start={4.31} end={9.48}/>, document.getElementById('app'))
     </script>
