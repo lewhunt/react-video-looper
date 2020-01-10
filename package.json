@@ -1,7 +1,7 @@
 {
   "name": "react-video-looper",
   "version": "1.0.0",
-  "description": "A react component that provides non-descrutive inner looping of a video source",
+  "description": "A react component that provides non-destructive inner looping of a video source",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
