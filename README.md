@@ -5,7 +5,7 @@ A video component that provides non-destructive inner looping of a video source 
 
 [Demo (with debug editor)](https://lewhunt.github.io/react-video-looper/)
 
-[CodePen Demo](https://codepen.io/lewhunt/pen/yLyqJxL)
+[CodePen Demo](https://codepen.io/lewhunt/pen/vYEaKMj)
 
 ## Intro
 ### What is it?
