@@ -3,7 +3,9 @@ A video component that provides non-destructive inner looping of a video source 
 
 ![Example](readme-assets/react-video-looper-example.gif)
 
-[Demo](https://lewhunt.github.io/react-video-looper/)
+[Demo (with debug editor)](https://lewhunt.github.io/react-video-looper/)
+
+[CodePen Demo](https://codepen.io/lewhunt/pen/MWYBypG)
 
 ## Intro
 ### What is it?
@@ -74,7 +76,7 @@ Name | Type | Required | Default | Description
 `objectPosition` | string | optional | '40%' | css object-position alignment of the video
 
 ## Demo Editor
-The provided demo includes a simple editor that allows you to change some of the options. The [react-use-form-data hook](https://github.com/lewhunt/react-use-form-data) is used to manage the demo editor's data state:
+The demo includes a simple editor that allows you to change some of the options. The [react-use-form-data hook](https://github.com/lewhunt/react-use-form-data) is used to manage the demo editor's data state:
 
 ![Demo Editor Example](https://github.com/lewhunt/react-use-form-data/raw/master/readme-assets/react-use-form-data-example.gif)
 
