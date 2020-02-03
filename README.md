@@ -12,7 +12,7 @@ A React component that provides non-destructive inner looping on video files.
 This react component takes a video source file with two specified values (start and end points) and then generates an infinite (or finite) looping video element. Fullscreen by default.
 
 ### Why do it?
-It offers an alternative to the default HTML5 video loop attribute allowing you to use the original video source file and benefit from performant non-destructive looping. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
+Originally done to assist in the development of an interactive fitness app, it offers an alternative to the default HTML5 video loop attribute allowing you to use the original video source file and benefit from performant non-destructive looping. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
 
 ### How is it done?
 Under the hood this component utilises two overlapping video elements that playback in turn. Running the demo in debug mode (with split view enabled) further illustrates this technique with debug text and the cloned video is set to greyscale. See the end of this readme for more info on the [editor](#demo-editor).
