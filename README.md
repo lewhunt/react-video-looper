@@ -9,7 +9,7 @@ A React component that provides non-destructive inner looping on video files.
 
 ## Intro
 ### What is it?
-This react component takes a video source file with two specified time values (start and end loop points) and then plays an infinite (or finite) loop of that inner portion of the video. Fullscreen by default.
+This react component takes a video source file url with two specified time values (start and end trim points) and then plays an infinite (or finite) loop of that inner portion of the video. Fullscreen by default.
 
 ### Why do it?
 Initially done to assist in the development of an interactive fitness app, it offers an alternative to the default HTML5 video loop attribute allowing you to use the original video source file and benefit from performant non-destructive looping. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
