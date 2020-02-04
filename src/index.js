@@ -123,7 +123,7 @@ export default class VideoLooper extends React.Component {
                 currentVideo.pause();
                 setTimeout(() => {
                     currentVideo.currentTime = this.props.start;
-                 }, 1000);
+                 }, 500);
             });
         }  
     }
@@ -140,7 +140,7 @@ export default class VideoLooper extends React.Component {
         return (
             <VideoContainer onClick={this.togglePlayback} {...this.props}>
                 <PlayButton {...this.state} {...this.props}/>
-                <Video ref={(video) => { this.video = video; }} isVisible={!this.state.isVideoCloneActive} {...this.props}>
+                <Video ref={(video) => { this.video = video; }} isVisible {...this.props}>
                     <source src={this.props.source} type='video/mp4' />
                 </Video>
                 <Video ref={(videoClone) => { this.videoClone = videoClone; }} className='videoClone' isVisible={this.state.isVideoCloneActive} {...this.props}>
@@ -188,9 +188,9 @@ const Video = styled.video`
     width: ${props => ((props.isDebugMode && props.isSplitView) ? '50%' : '100%')};
     height: 100%;
     left:0;
-    opacity: ${props => (props.isVisible ? 1 : ((props.isDebugMode && props.isSplitView) ? 0.5 : 0) )};
+    opacity: ${props => (props.isVisible || (props.isDebugMode && props.isSplitView) ? 1 : 0) };
     &.videoClone {
-        filter: ${props => (props.isDebugMode ? 'grayscale(100%)' : 'none' )};
+        filter: ${props => ((props.isDebugMode && props.isSplitView) ? 'grayscale(100%)' : 'none' )};
     }
 `;
 
