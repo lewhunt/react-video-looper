@@ -1,5 +1,5 @@
 # React Video Looper
-A React video player component that provides non-destructive inner looping on video files.
+A React video player (packaged as a component tool) for looping inner sections of a video file.
 
 ![Example](https://github.com/lewhunt/assets/raw/master/readme/react-video-looper-example.gif)
 
