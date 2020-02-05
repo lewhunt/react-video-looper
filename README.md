@@ -1,7 +1,7 @@
 # React Video Looper
 A React video player component that provides non-destructive inner looping on video files.
 
-![Example](https://lewhunt.github.io/assets/readme/react-video-looper-example.gif)
+![Example](https://github.com/lewhunt/assets/raw/master/readme/react-video-looper-example.gif)
 
 [Demo (with debug editor)](https://lewhunt.github.io/react-video-looper/)
 
@@ -78,4 +78,4 @@ Name | Type | Required | Default | Description
 ## Demo Editor
 The demo includes a simple editor that allows you to change some of the options. The [react-use-form-data hook](https://github.com/lewhunt/react-use-form-data) is used to manage the demo editor's data state:
 
-![Demo Editor Example](https://lewhunt.github.io/assets/readme/react-use-form-data-example.gif)
+![Demo Editor Example](https://github.com/lewhunt/assets/raw/master/readme/react-use-form-data-example.gif)
