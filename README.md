@@ -79,6 +79,3 @@ Name | Type | Required | Default | Description
 The demo includes a simple editor that allows you to change some of the options. The [react-use-form-data hook](https://github.com/lewhunt/react-use-form-data) is used to manage the demo editor's data state:
 
 ![Demo Editor Example](https://github.com/lewhunt/react-use-form-data/raw/master/readme-assets/react-use-form-data-example.gif)
-
-## License
-MIT © [Lewis Hunt](https://github.com/lewhunt)
