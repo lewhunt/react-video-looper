@@ -3,13 +3,13 @@ import React from 'react';
 import {render} from 'react-dom'
 import { createGlobalStyle } from 'styled-components'
 import VideoLooper from '../../src'
-import sampleVideo from '../../src/sample.mp4'
 import { Editor } from './editor.js'
 import useFormData from 'react-use-form-data'
 
 export default function Demo() {
 
   const [formData, updateFormData, initialFormData, isInitialDataForPlaceholder] = useFormData({ 
+    sampleVideo: 'https://lewhunt.github.io/assets/fitness/squats-720p.mp4',
     start: 4.31,
     end: 9.48,
     isEditorActive: false,
@@ -21,7 +21,7 @@ export default function Demo() {
     <div>
       <GlobalStyle></GlobalStyle>
       <Editor {...formData} updateFormData={updateFormData} initialFormData={isInitialDataForPlaceholder && initialFormData}></Editor>
-      <VideoLooper source={sampleVideo} start={Number(formData.start)} end={Number(formData.end)} isDebugMode={formData.isDebugMode} isSplitView={formData.isSplitView} />
+      <VideoLooper source={formData.sampleVideo} start={Number(formData.start)} end={Number(formData.end)} isDebugMode={formData.isDebugMode} isSplitView={formData.isSplitView} />
     </div>
   )
   
