@@ -3,6 +3,10 @@ A React video player (packaged as a component library) for looping inner section
 
 ![Example](https://github.com/lewhunt/assets/raw/master/readme/react-video-looper-example.gif)
 
+```
+<VideoLooper source='sample.mp4' start={4.31} end={9.48}/>
+```
+
 [Demo (with debug editor)](https://lewhunt.github.io/react-video-looper/)
 
 [CodePen Demo](https://codepen.io/lewhunt/pen/vYEaKMj)
