@@ -4,7 +4,7 @@ A React video player for looping inner sections of a video file. Packaged as an 
 ![Example](https://github.com/lewhunt/assets/raw/master/readme/react-video-looper-example.gif)
 
 ```
-<VideoLooper source='sample.mp4' start={4.31} end={9.48}/>
+<VideoLooper source='sample.mp4' start={4.31} end={9.48} loopCount={2} isDebugMode />
 ```
 
 [Demo (with debug editor)](https://lewhunt.github.io/react-video-looper/)
@@ -13,7 +13,7 @@ A React video player for looping inner sections of a video file. Packaged as an 
 
 ## Intro
 ### What is it?
-This react component provides non-destructive inner looping on video files. By specifying start and end trim points it begins playback and then repeats an infinite (or finite) loop on the trimmed portion of the video. Fullscreen by default.
+This react component provides non-destructive inner looping on video files. By specifying start and end trim points it begins playback at zero and then repeats an infinite (or finite) loop on the trimmed portion of the video. Fullscreen by default.
 
 ### Why do it?
 Initially done to assist in the development of an interactive fitness app, it offers an interesting alternative to the default HTML5 video loop attribute because it can play the original source file from the start but then repeat loop the trimmed portion of the video. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
