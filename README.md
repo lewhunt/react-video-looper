@@ -7,9 +7,11 @@ A React video player for looping inner sections of a video file. Packaged as an 
 <VideoLooper source='sample.mp4' start={4.31} end={9.48} loopCount={2} isDebugMode />
 ```
 
-[Demo (with debug editor)](https://lewhunt.github.io/react-video-looper/)
+[See it in use here - React Fitness App](https://lewhunt.github.io/react-fitness-app/)
 
-[CodePen Demo](https://codepen.io/lewhunt/pen/vYEaKMj)
+[Demo Editor (with debug mode)](https://lewhunt.github.io/react-video-looper/)
+
+[CodePen Demo (bare-bones sample)](https://codepen.io/lewhunt/pen/vYEaKMj)
 
 ## Intro
 ### What is it?
@@ -83,3 +85,8 @@ Name | Type | Required | Default | Description
 The demo includes a simple editor that allows you to change some of the options. The [react-use-form-data hook](https://github.com/lewhunt/react-use-form-data) is used to manage the demo editor's data state:
 
 ![Demo Editor Example](https://github.com/lewhunt/assets/raw/master/readme/react-use-form-data-example.gif)
+
+## Example In Use
+The component is currently used in the [React Fitness App](https://lewhunt.github.io/react-fitness-app/):
+
+![React Fitness App Example](https://github.com/lewhunt/assets/raw/master/readme/react-fitness-app-example.gif)
