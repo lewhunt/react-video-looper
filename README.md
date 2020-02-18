@@ -18,7 +18,7 @@ A React video player for looping inner sections of a video file. Packaged as an 
 This react component provides non-destructive inner looping on video files. By specifying start and end trim points it begins playback at zero and then repeats an infinite (or finite) loop on the trimmed portion of the video. Fullscreen by default.
 
 ### Why do it?
-Initially done to assist in the development of an interactive fitness app, it offers an interesting alternative to the default HTML5 video loop attribute because it can play the original source file from the start but then repeat loop the trimmed portion of the video. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
+Initially built to assist in the development of an [interactive fitness app](https://lewhunt.github.io/react-fitness-app/), it offers an interesting alternative to the default HTML5 video loop attribute because it can play the original source file from the start but then repeat loop the trimmed portion of the video. In many cases it provides a more seamless loop compared to the default loop attribute or media fragment parameters.
 
 ### How is it done?
 Under the hood this component utilises two overlapping video elements that playback in turn. Running the demo in debug mode (with split view enabled) further illustrates this technique with debug text and the cloned video is set to greyscale. See the end of this readme for more info on the [editor](#demo-editor).
