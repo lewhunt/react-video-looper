@@ -1,6 +1,6 @@
 {
   "name": "react-video-looper",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A react component that provides non-destructive inner looping of a video source",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -26,19 +26,19 @@
     "react": "16.x"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
+    "@testing-library/react": "^9.5.0",
     "babel-jest": "^24.9.0",
     "babel-polyfill": "^6.26.0",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "jest": "^24.9.0",
-    "nwb": "0.23.x",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-use-form-data": "^1.0.4"
+    "nwb": "^0.24.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-use-form-data": "^1.0.9"
   },
   "author": "Lewis Hunt",
   "homepage": "https://github.com/lewhunt/react-video-looper#readme",
