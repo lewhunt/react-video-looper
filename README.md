@@ -72,7 +72,7 @@ Name | Type | Required | Default | Description
 `end` | number | required | 9.48 | ending point of loop in seconds
 `speed` | number | optional | 1 | video playback rate
 `loopCount` | number | optional | null | optional amount of loops to run before playing to end of video
-`autoplay` | bool | optional | true | automatically start video playback
+`autoPlay` | bool | optional | true | automatically start video playback
 `muted` | bool | optional | true | disable audio of video loop
 `isDebugMode` | bool | optional | false | debug mode titles the active video instance and current playback time
 `isSplitView` | bool | optional | false | illustrative split-view of the two video instances playing side by side
