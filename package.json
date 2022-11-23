@@ -35,7 +35,7 @@
     "babel-polyfill": "^6.26.0",
     "gh-pages": "^2.2.0",
     "jest": "^24.9.0",
-    "nwb": "^0.24.5",
+    "nwb": "^0.25.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-use-form-data": "^1.0.9"
