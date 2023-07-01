@@ -23,7 +23,7 @@ export default class VideoLooper extends React.Component {
   static defaultProps = {
     speed: 1,
     loopCount: null,
-    autoPlay: false,
+    autoPlay: true,
     muted: true,
     isDebugMode: false,
     isSplitView: false,
