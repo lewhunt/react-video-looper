@@ -1,6 +1,6 @@
 {
   "name": "react-video-looper",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "A react component that provides non-destructive inner looping of a video source",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,10 +11,10 @@
     "umd"
   ],
   "scripts": {
-    "build": "nwb build-react-component",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
-    "start": "nwb serve-react-demo",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && nwb serve-react-demo",
     "test": "jest",
     "test:watch": "jest --watch --no-cache",
     "deploy": "gh-pages -d demo/dist"
