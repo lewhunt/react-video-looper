@@ -33,7 +33,7 @@
     "@testing-library/react": "^9.5.0",
     "babel-jest": "^24.9.0",
     "babel-polyfill": "^6.26.0",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^5.0.0",
     "jest": "^24.9.0",
     "nwb": "^0.24.5",
     "react": "^16.13.1",
